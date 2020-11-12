@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Leaflet Map</title>
+	<!-- External Stylesheets -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<!-- Add the Leaflet JavaScript library -->
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <style>
+
+	/* css to customize Leaflet default styles  */
+	.custom .leaflet-popup-tip,
+	.custom .leaflet-popup-content-wrapper {
+	    background: #e63946;
+	    color: #f1faee;
+	}
+	</style>
+</head>
+<body>
+        <!-- Our web map and content will go here -->
+    <div id="map2" style="width: 1705px; height: 1375px"></div>
+    <script>
+// DARK MAP
+
+    // Create variable to hold map element, give initial settings to map
+    var map2 = L.map('map2',{center: [51.5, -0.09], zoom: 11});
+    // Add OpenStreetMap tile layer to map element
+	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png',{
+	maxZoom: 20,
+//	minZoom: 1,
+	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'}).addTo(map2);
+	var redIcon = L.icon({
+    iconUrl: 'red_marker.png',
+    iconSize:     [50, 50], // size of the icon
+    iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
+    popupAnchor:  [1, 1] // point from which the popup should open relative to the iconAnchor
+	});
+	    // specify popup options 
+    var customOptions =
+        {
+        'maxWidth': '500',
+        'className' : 'custom'
+        }
+	L.marker([51.5, -0.09], {icon: redIcon}).bindPopup('<b>UK!</b><br>Nice place.</br><iframe width="300" height="169" src="https://www.youtube.com/embed/ghkQoJoipbM?start=3571" frameborder="0" allowfullscreen></iframe>',customOptions).addTo(map2);
+    </script>
+</body>
+</html>
