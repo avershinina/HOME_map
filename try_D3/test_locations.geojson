@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "location": "Lagos, Nigeria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3892822265625,
+          6.459963649324932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "location": "Arctic, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.13671875,
+          65.14611484756372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "location": "Greenland"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -40.95703125,
+          75.97355295343336
+        ]
+      }
+    }
+  ]
+}
