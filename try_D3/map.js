@@ -23,7 +23,7 @@ var projection = d3.geo.mercator()
   .translate([width/2, height/2]);
 
 // Load the features from the GeoJSON.
-d3.json('https://raw.githubusercontent.com/avershinina/HOME_map/main/ne_110m_admin_0_countries.geojson', function(error, features) {
+d3.json('ne_110m_admin_0_countries.geojson', function(error, features) {
 
   // We add a <g> element to the SVG element and give it a class to
   // style it later.
