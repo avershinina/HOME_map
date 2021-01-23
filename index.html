@@ -19,128 +19,58 @@
 </head>
 <body>
     <!-- Our web map and content will go here -->
-    <div id="map" style="width: 705px; height: 375px"></div>
-    <script>
-
-    // Create variable to hold map element, give initial settings to map
-    var map = L.map('map',{ center: [51.5, -0.09], zoom: 5});
-    // Add OpenStreetMap tile layer to map element
-	L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', {
-	maxZoom: 200,
-	minZoom: 1,
-	attribution: 'Tiles courtesy of the <a href="https://usgs.gov/">U.S. Geological Survey</a>' }).addTo(map);
-	var redIcon = L.icon({
-    iconUrl: 'red_marker.png',
-    iconSize:     [50, 50], // size of the icon
-    iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
-    popupAnchor:  [1, 1] // point from which the popup should open relative to the iconAnchor
-	});
-	    // specify popup options 
-    var customOptions =
-        {
-        'maxWidth': '500',
-        'className' : 'custom'
-        }
-	L.marker([51.5, -0.09], {icon: redIcon}).bindPopup('<b>UK!</b><br>Nice place.</br><iframe width="300" height="169" src="https://www.youtube.com/embed/ghkQoJoipbM?start=3571" frameborder="0" allowfullscreen></iframe>',customOptions).addTo(map);
-    </script>
-        <!-- Our web map and content will go here -->
-    <div id="map2" style="width: 705px; height: 375px"></div>
-    <script>
-// DARK MAP
-
-    // Create variable to hold map element, give initial settings to map
-    var map2 = L.map('map2',{center: [51.5, -0.09], zoom: 2});
-    // Add OpenStreetMap tile layer to map element
-	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png',{
-	maxZoom: 200,
-	minZoom: 1,
-	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'}).addTo(map2);
-	var redIcon = L.icon({
-    iconUrl: 'red_marker.png',
-    iconSize:     [50, 50], // size of the icon
-    iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
-    popupAnchor:  [1, 1] // point from which the popup should open relative to the iconAnchor
-	});
-	    // specify popup options 
-    var customOptions =
-        {
-        'maxWidth': '500',
-        'className' : 'custom'
-        }
-	L.marker([51.5, -0.09], {icon: redIcon}).bindPopup('<b>UK!</b><br>Nice place.</br><iframe width="300" height="169" src="https://www.youtube.com/embed/ghkQoJoipbM?start=3571" frameborder="0" allowfullscreen></iframe>',customOptions).addTo(map2);
-    </script>
-
-	<div id="map3" style="width: 705px; height: 375px"></div>
+	<div id="map5" style="width: 1024px; height: 605px"></div>
     <script>
 // ////////////////////////////////////
-    // Create variable to hold map element, give initial settings to map
-    var map3 = L.map('map3',{center: [51.5, -0.09], zoom: 2});
-    // Add OpenStreetMap tile layer to map element
-	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
-	maxZoom: 20,
-	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-}).addTo(map3);
-	var redIcon = L.icon({
-    iconUrl: 'red_marker.png',
-    iconSize:     [50, 50], // size of the icon
-    iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
-    popupAnchor:  [1, 1] // point from which the popup should open relative to the iconAnchor
-	});
-	    // specify popup options 
-    var customOptions =
-        {
-        'maxWidth': '500',
-        'className' : 'custom'
-        }
-	L.marker([51.5, -0.09], {icon: redIcon}).bindPopup('<b>UK!</b><br>Nice place.</br><iframe width="300" height="169" src="https://www.youtube.com/embed/ghkQoJoipbM?start=3571" frameborder="0" allowfullscreen></iframe>',customOptions).addTo(map3);
-    </script>
-    <div id="map4" style="width: 705px; height: 375px"></div>
-    <script>
-// ////////////////////////////////////
-    // Create variable to hold map element, give initial settings to map
-    var map4 = L.map('map4',{center: [51.5, -0.09], zoom: 2});
-    // Add OpenStreetMap tile layer to map element
-	L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-	maxZoom: 17,
-	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-}).addTo(map4);
-	var redIcon = L.icon({
-    iconUrl: 'red_marker.png',
-    iconSize:     [50, 50], // size of the icon
-    iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
-    popupAnchor:  [1, 1] // point from which the popup should open relative to the iconAnchor
-	});
-	    // specify popup options 
-    var customOptions =
-        {
-        'maxWidth': '500',
-        'className' : 'custom'
-        }
-	L.marker([51.5, -0.09], {icon: redIcon}).bindPopup('<b>UK!</b><br>Nice place.</br><iframe width="300" height="169" src="https://www.youtube.com/embed/ghkQoJoipbM?start=3571" frameborder="0" allowfullscreen></iframe>',customOptions).addTo(map4);
-    </script>
 
-	<div id="map5" style="width: 705px; height: 375px"></div>
-    <script>
-// ////////////////////////////////////
-    // Create variable to hold map element, give initial settings to map
-    var map5 = L.map('map5',{center: [51.5, -0.09], zoom: 2});
-    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-	maxZoom: 16,
-	}).addTo(map5);
 	var redIcon = L.icon({
-    iconUrl: 'red_marker.png',
-    iconSize:     [50, 50], // size of the icon
-    iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
-    popupAnchor:  [1, 1] // point from which the popup should open relative to the iconAnchor
+    iconUrl: 'markers/dot-Red.png',
+    iconSize:     [25, 25], // size of the icon
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [10, 10] // point from which the popup should open relative to the iconAnchor
 	});
+
+    var greenIcon = L.icon({
+    iconUrl: 'markers/dot-Green.png',
+    iconSize:     [25, 25], // size of the icon
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [10, 10] // point from which the popup should open relative to the iconAnchor
+    });
+
 	    // specify popup options 
     var customOptions =
         {
         'maxWidth': '500',
         'className' : 'custom'
         }
-	L.marker([51.5, -0.09], {icon: redIcon}).bindPopup('<b>UK!</b><br>Nice place.</br><iframe width="300" height="169" src="https://www.youtube.com/embed/ghkQoJoipbM?start=3571" frameborder="0" allowfullscreen></iframe>',customOptions).addTo(map5);
+
+	var uk = L.marker([51.5, -0.09], {icon: redIcon}).bindPopup('<b>UK!</b><br>Nice place.</br><iframe width="300" height="169" src="https://www.youtube.com/embed/ghkQoJoipbM?start=3571" frameborder="0" allowfullscreen></iframe>',customOptions),
+    denver = L.marker([39.74, -104.99],{icon: greenIcon}).bindPopup('This is Denver, CO.');
+    var places1 = L.layerGroup([uk]);
+    var places2 = L.layerGroup([denver]);
+
+        // Create variable to hold map element, give initial settings to map
+    var mapitself = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+    maxZoom: 16,
+    });
+
+    var map5 = L.map('map5',{
+        center: [51.5, -0.09],
+        zoom: 2,
+        layers:[mapitself, places1, places2]
+    });
+
+    var baseMaps = {
+        "MapLayer": mapitself
+    };
+
+    var overlayMaps = {
+        "Red Places": places1,
+        "Green Places": places2
+    };
+
+    L.control.layers(baseMaps, overlayMaps).addTo(map5);
     </script>
 </body>
 </html>
