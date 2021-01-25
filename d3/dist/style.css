@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+pre {
+  font-size: 7em;
+}
+
+.marks .land {
+  fill: #2daeb5;
+}
+
+.marks .sphere {
+  fill: #e4e4e4;
+}
+
+.marks .interiors {
+  fill: none;
+  stroke: #C0C0BB;
+}
+
+circle {
+  opacity: .3;
+}
