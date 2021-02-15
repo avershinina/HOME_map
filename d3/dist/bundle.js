@@ -11333,7 +11333,7 @@
 	  return data;
 	};
 
-	const csvUrl = "../../data/MeteorStrikes.csv";
+	const csvUrl = "/home/avershinina/Documents/dataviz/HOME_map/data/MeteorStrikes.csv";
 
 	const row = d => {
 	  d.latitude = +d.latitude;
